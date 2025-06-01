@@ -52,7 +52,7 @@ export default function() {
 export const options = {
     // Start with a small number of VUs and gradually increase
     stages: [
-        { duration: '30s', target: 10 },   // Ramp up to 10 users over 30 seconds
+        { duration: '30s', target: 1000000 },   // Ramp up to 1000000 users over 30 seconds
         { duration: '1m', target: 50 },    // Ramp up to 50 users over 1 minute
         { duration: '30s', target: 100 },  // Ramp up to 100 users over 30 seconds
         { duration: '1m', target: 100 },   // Stay at 100 users for 1 minute
