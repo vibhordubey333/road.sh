@@ -34,3 +34,9 @@ You can use any programming language to implement this project. Here are some of
 1. Start the server: `go run cmd/main.go start --port=9090`
 2. Connect to server with client 1: `go run cmd/main.go connect --server=localhost:9090 --name vibhor`
 3. Connect to server with client 2: `go run cmd/main.go connect --server=localhost:9090 --name vibhor-1`
+
+# Load Testing Server:
+
+1. Start the server: `go run cmd/main.go start --port=9090`
+2. Navigate to `load-testing` directory.
+3. Execute `k6 run broadcast-load-testing.js`
